@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable ios-sim via Homebrew
+  package:
+    name: ios-sim
+    state: latest
+  when: ansible_os_family == "Darwin"
